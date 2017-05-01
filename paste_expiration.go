@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/DHowett/gotimeout"
+	"github.com/kilgarth/gotimeout"
 )
 
 type ExpiringPasteStore struct {

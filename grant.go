@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/DHowett/gotimeout"
+	"github.com/kilgarth/gotimeout"
 	"github.com/golang/glog"
 )
 

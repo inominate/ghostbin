@@ -3,7 +3,7 @@ package main
 import (
 	"crypto/aes"
 	"crypto/cipher"
-	"github.com/DHowett/go-xattr"
+	"github.com/kilgarth/go-xattr"
 	"golang.org/x/crypto/scrypt"
 	"io"
 	"os"
@@ -141,9 +141,9 @@ func NewFilesystemPasteStore(path string) *FilesystemPasteStore {
 }
 
 func (store *FilesystemPasteStore) GenerateNewPasteID(encrypted bool) (PasteID, error) {
-	nbytes, idlen := 4, 5
+	nbytes, idlen := 32, 64
 	if encrypted {
-		nbytes, idlen = 5, 8
+		nbytes, idlen = 64, 128
 	}
 
 	for {
