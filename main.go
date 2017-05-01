@@ -29,7 +29,7 @@ import (
 )
 
 const PASTE_CACHE_MAX_ENTRIES int = 1000
-const PASTE_MAXIMUM_LENGTH ByteSize = 1048576 // 1 MB
+const PASTE_MAXIMUM_LENGTH ByteSize = 5242880 // 5MB
 const MAX_EXPIRE_DURATION time.Duration = 15 * 24 * time.Hour
 
 type PasteAccessDeniedError struct {
