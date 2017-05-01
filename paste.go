@@ -141,9 +141,9 @@ func NewFilesystemPasteStore(path string) *FilesystemPasteStore {
 }
 
 func (store *FilesystemPasteStore) GenerateNewPasteID(encrypted bool) (PasteID, error) {
-	nbytes, idlen := 32, 64
+	nbytes, idlen := 32, 24
 	if encrypted {
-		nbytes, idlen = 64, 128
+		nbytes, idlen = 64, 32
 	}
 
 	for {
