@@ -196,11 +196,12 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "LatinModernSans10", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 10px;
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
+  word-wrap: break-word;
 }
 a {
   color: #0088cc;
@@ -266,7 +267,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "LatinModernSans10", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }
 label {
   display: block;
@@ -839,7 +840,7 @@ select:focus:invalid:focus {
   height: 20px;
   min-width: 16px;
   padding: 4px 5px;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: normal;
   line-height: 20px;
   text-align: center;
@@ -1104,7 +1105,7 @@ legend + .control-group {
 }
 .close {
   float: right;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 20px;
   color: #000000;
@@ -1135,7 +1136,7 @@ button.close {
   *zoom: 1;
   padding: 4px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 20px;
   text-align: center;
   vertical-align: middle;

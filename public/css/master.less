@@ -1,6 +1,6 @@
 @paste-background: #2a2a2a;
 @paste-text-color: contrast(@paste-background, black, #ebebeb);
-@paste-font-size: 12pt;
+@paste-font-size: 10pt;
 @paste-font-size-mobile: 10pt;
 @paste-line-height: @paste-font-size + 2pt;
 @paste-line-height-mobile: @paste-font-size-mobile + 2pt;
@@ -10,9 +10,9 @@
 @toolbox-height: 42px;
 @toolbox-background: darken(@paste-background, 3%);
 
-@paste-title-font-size: 16pt;
+@paste-title-font-size: 10pt;
 @paste-title-color: contrast(@toolbox-background, black, white);
-@paste-subtitle-font-size: 10pt;
+@paste-subtitle-font-size: 8pt;
 @paste-subtitle-color: darken(@paste-title-color, 40%);
 
 @minor-highlight: lighten(@paste-background, 4%);
@@ -135,7 +135,7 @@ input[type=password] {
 }
 
 .code, code {
-	font-family: 'EnvyCodeRWeb', 'monospace';
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-size: @paste-font-size;
@@ -153,7 +153,6 @@ code.ghost {
 }
 
 .code {
-	white-space: pre;
 	padding: @paste-content-padding;
 	.box-sizing(border-box);
 
